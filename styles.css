@@ -477,8 +477,7 @@ footer {
   font-size: var(--font_size_18);
   width: 100%;
   max-width: 787px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 50px auto;
 }
 
 .quinta_secao > .content_box > .carrosel_box > .mySlides {
@@ -610,12 +609,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 19px;
+  gap: 20px;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .setima_secao > .text {
-  width: 30%;
+  /* width: 0%; */
 }
 
 .setima_secao > .text > span {
@@ -771,7 +771,7 @@ input:focus:-moz-placeholder {
   max-width: 400px;
 }
 
-.footer > .informacoes_box > .informacoes > p > span > svg {
+.footer > .informacoes_box > .informacoes > p > a > svg {
   fill: var(--color_branco);
 }
 
@@ -789,7 +789,7 @@ input:focus:-moz-placeholder {
   margin: 50px 0;
 }
 
-.footer > .informacoes_box > .informacoes > .icones > span {
+.footer > .informacoes_box > .informacoes > .icones > a {
   margin-right: 12px;
 }
 
@@ -803,6 +803,7 @@ input:focus:-moz-placeholder {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .footer > .listas > ul {
@@ -989,10 +990,8 @@ input:focus:-moz-placeholder {
     margin: 0 auto;
     z-index: 2;
     position: relative;
-  }
-
-  .setima_secao > .text {
-    width: 50%;
+    justify-content: space-between;
+    padding: 30px;
   }
 
   .setima_secao > .text > span {
@@ -1113,26 +1112,12 @@ input:focus:-moz-placeholder {
   /* ===============SÉTIMA SEÇÃO======================== */
 
   .setima_secao {
-    width: 60%;
+    width: 800px;
   }
 
   /* ===============OITAVA SEÇÃO======================== */
 
   /* ==================FOOTER======================*/
-
-  /* .footer > .informacoes_box {
-      border: 2px solid red;
-      width: 40%;
-    }
-
-    footer > .listas {
-      border: 2px solid orange;
-      width: 50% !important;
-    } */
-
-  /* .footer {
-    justify-content: center;
-  } */
 }
 
 @media (min-width: 1275px) {
@@ -1142,6 +1127,10 @@ input:focus:-moz-placeholder {
 }
 
 @media (min-width: 1500px) {
+  .setima_secao {
+    width: 1000px;
+  }
+
   .oitava_secao > .content_box {
     margin: 0 auto;
     width: 75%;
