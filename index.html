@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <title>Bindflow</title>
 </head>
 
@@ -437,17 +438,17 @@
 
             </div>
 
-            <form class="input_box" action="https://formsubmit.co/filipe.natividade@bindflow.com.br" method="POST" id="meuFormulario" onsubmit="resetarFormulario()">
+            <form class="input_box" action="https://formsubmit.co/filipe.natividade@bindflow.com.br" method="POST" id="meuFormulario" onsubmit="resetarFormulario()" target="_blank">
 
                 <input type="hidden" name="_captcha" value="false">
 
                 <input type="hidden" name="_next" value="https://obrigaado-pelo-contato.vercel.app/">
 
-                <input type="text" placeholder="NOME:" name="name">
+                <input type="text" placeholder="NOME:" name="nome" required>
 
-                <input type="text" placeholder="TELEFONE:" name="phone">
+                <input type="text" placeholder="TELEFONE:" name="telefone" id="telefone" required>
 
-                <textarea id="" cols="30" rows="8" placeholder="MENSAGEM:" name="message"></textarea>
+                <textarea cols="30" rows="8" placeholder="MENSAGEM:" name="mensagem" required></textarea>
 
 
                 <button type="submit" class="btn_submit">ENVIAR</button>
