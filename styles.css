@@ -1,7 +1,7 @@
 :root {
-  --pading_mobile: 50px 20px;
-  --pading_tablet: 100px 60px;
-  --pading_desktop: 150px 100px;
+  --padding_mobile: 20px;
+  --padding_tablet: 60px;
+  --padding_desktop: 100px;
 
   --font_size_12: 12px;
   --font_size_14: 14px;
@@ -137,7 +137,21 @@ textarea {
 
 section,
 footer {
-  padding: var(--pading_mobile);
+  padding: var(--padding_mobile);
+}
+
+@media (min-width: 768px) {
+  section,
+  footer {
+    padding: var(--padding_tablet);
+  }
+}
+
+@media (min-width: 1000px) {
+  section,
+  footer {
+    padding: var(--padding_desktop);
+  }
 }
 
 /* =====================HEADER=====================*/
@@ -195,7 +209,7 @@ footer {
 
 .nav_bar {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: var(--pading_mobile);
+  padding: var(--padding_mobile);
   height: max-content;
   display: none;
   flex-direction: column;
@@ -370,7 +384,7 @@ footer {
   list-style: disc;
   font-size: var(--font_size_18);
   margin: 20px 0;
-  margin-left: var(--pading_mobile);
+  margin-left: var(--padding_mobile);
 }
 
 .lista_box > ul > li {
@@ -844,10 +858,6 @@ input:focus:-moz-placeholder {
 
 @media (min-width: 768px) {
   /* =====================HEADER=====================*/
-  section,
-  footer {
-    padding: var(--pading_tablet);
-  }
 
   .header {
     height: 80px;
@@ -863,7 +873,7 @@ input:focus:-moz-placeholder {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-right: var(--pading_tablet);
+    padding-right: var(--padding_tablet);
     gap: 50px;
     font-size: var(--font_size_16);
   }
@@ -885,7 +895,7 @@ input:focus:-moz-placeholder {
     background-color: transparent;
     justify-content: end;
     padding: 0;
-    padding-right: var(--pading_tablet);
+    padding-right: var(--padding_tablet);
     top: 40%;
     height: 60%;
     gap: 20px;
@@ -1063,24 +1073,20 @@ input:focus:-moz-placeholder {
 /* ==================DESKTOP======================*/
 
 @media (min-width: 1000px) {
-  section,
-  footer {
-    padding: var(--pading_desktop);
-  }
   /* =====================HEADER=====================*/
   .header {
     height: 100px;
   }
   .nav_bar {
     font-size: var(--font_size_16);
-    padding-right: var(--pading_desktop);
+    padding-right: var(--padding_desktop);
   }
 
   /* =====REDES SOCIAIS=====*/
 
   .redes_sociais_header {
     font-size: var(--font_size_18);
-    padding-right: var(--pading_desktop);
+    padding-right: var(--padding_desktop);
   }
 
   /* ===============PRIMEIRA SEÇÃO======================== */
