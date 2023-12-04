@@ -1,7 +1,7 @@
 :root {
-  --pading_mobile: 20px;
-  --pading_tablet: 60px;
-  --pading_desktop: 100px;
+  --pading_mobile: 50px 20px;
+  --pading_tablet: 100px 60px;
+  --pading_desktop: 150px 100px;
 
   --font_size_12: 12px;
   --font_size_14: 14px;

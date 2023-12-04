@@ -53,10 +53,3 @@ function showSlides() {
 }
 
 window.addEventListener('resize', showSlides);
-
-// ==================resetar formulario===================
-
-function resetarFormulario() {
-  document.getElementById("meuFormulario").reset();
-  return false;
-}
