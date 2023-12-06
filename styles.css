@@ -867,6 +867,7 @@ input:focus:-moz-placeholder {
     display: none;
   }
 
+
   /* =====REDES SOCIAIS=====*/
 
   .redes_sociais_header {
@@ -875,7 +876,7 @@ input:focus:-moz-placeholder {
     align-items: center;
     padding-right: var(--padding_tablet);
     gap: 50px;
-    font-size: var(--font_size_16);
+    font-size: var(--font_size_12);
   }
   .redes_sociais_header > a {
     color: var(--color_cinza);
@@ -888,8 +889,10 @@ input:focus:-moz-placeholder {
     fill: var(--color_cinza);
   }
 
+  /* ===================MENU */
+
   .nav_bar {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     align-items: center;
     background-color: transparent;
@@ -898,10 +901,12 @@ input:focus:-moz-placeholder {
     padding-right: var(--padding_tablet);
     top: 40%;
     height: 60%;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     background-color: var(--color_branco);
-    font-size: var(--font_size_um);
+    font-size: var(--font_size_12);
+    z-index: 1;
+
   }
   .menu_label {
     width: fit-content;
@@ -962,6 +967,7 @@ input:focus:-moz-placeholder {
 
   .background_logo {
     height: 250px;
+    top: -57px;
   }
 
   /* ===============QUARTA SEÇÃO======================== */
@@ -1079,6 +1085,7 @@ input:focus:-moz-placeholder {
   }
   .nav_bar {
     font-size: var(--font_size_16);
+    gap:20px;
     padding-right: var(--padding_desktop);
   }
 
@@ -1103,6 +1110,7 @@ input:focus:-moz-placeholder {
 
   .background_logo {
     height: 350px;
+    top: -80px;
   }
 
   /* ===============QUARTA SEÇÃO======================== */
