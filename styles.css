@@ -1083,6 +1083,7 @@ input:focus:-moz-placeholder {
   .header {
     height: 100px;
   }
+  
   .nav_bar {
     font-size: var(--font_size_16);
     gap:20px;
