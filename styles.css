@@ -124,6 +124,7 @@ button {
 input,
 textarea {
   border: none;
+  outline: none;
 }
 
 /* ====================STYLE====================*/
@@ -1104,18 +1105,21 @@ textarea {
 }
 .footer > .informacoes_box {
   width: 100%;
-  max-width: 400px;
+ 
 }
 
 .footer > .informacoes_box > .informacoes > p > a > svg {
   fill: var(--color_branco);
 }
 
-.footer > .informacoes_box > img {
-  max-width: 450px;
+.footer > .informacoes_box > a {
   display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.footer > .informacoes_box > a > img {
   width: 70%;
-  margin: 0 auto;
 }
 
 .footer > .informacoes_box > .informacoes {
@@ -1174,9 +1178,14 @@ textarea {
 
   .footer > .informacoes_box {
     width: 45%;
+    max-width: 400px;
   }
 
-  .footer > .informacoes_box > img {
+  .footer > .informacoes_box > a {
+    text-align: left;
+  }
+
+  .footer > .informacoes_box > a > img {
     margin: 0;
   }
 
