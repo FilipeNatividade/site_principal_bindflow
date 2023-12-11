@@ -1026,22 +1026,20 @@ textarea {
   border-radius: 8px;
   padding-left: 20px;
 }
+.oitava_secao > .content_box > .input_box > textarea {
+  padding-top: 15px;
+}
+.oitava_secao > .content_box > .input_box > textarea::placeholder {
+  font-size: var(--font_size_16);
+  letter-spacing: 0.5px;
+}
 
 .oitava_secao > .content_box > .input_box > input {
   height: 40px;
 }
 
-::-webkit-input-placeholder {
-  font-size: var(--font_size_14);
-}
-
-::-moz-placeholder {
-  font-size: var(--font_size_14);
-}
-:-ms-input-placeholder {
-  font-size: var(--font_size_14);
-}
-:-moz-placeholder {
+.oitava_secao > .content_box > .input_box > input::placeholder {
+  height: 40px;
   font-size: var(--font_size_14);
 }
 
