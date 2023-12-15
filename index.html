@@ -439,17 +439,15 @@
 
             </div>
 
-            <form class="input_box" action="https://formsubmit.co/filipe.natividade@bindflow.com.br" method="POST" id="meuFormulario">
+            <form class="input_box" id="formulario" onsubmit="enviarEmail();return false">
 
-                <input type="hidden" name="_captcha" value="false">
+                <input type="text" placeholder="NOME:" name="nome" id="nome" required>
 
-                <input type="hidden" name="_next" value="https://obrigaado-pelo-contato.vercel.app/">
-
-                <input type="text" placeholder="NOME:" name="nome" required>
+                <input type="email" placeholder="E-MAIL:" name="email" id="email" required>
 
                 <input type="text" placeholder="TELEFONE:" name="telefone" id="telefone" required>
 
-                <textarea cols="30" rows="8" placeholder="MENSAGEM:" name="mensagem" required></textarea>
+                <textarea cols="30" rows="8" placeholder="MENSAGEM:" name="mensagem" id="mensagem" required></textarea>
 
 
                 <button type="submit" class="btn_submit">ENVIAR</button>
@@ -466,7 +464,7 @@
 
         <div class="informacoes_box">
 
-            <a href="#inicio" ><img src="./assets/logo_footer.png" alt=""></a>
+            <a href="#inicio"><img src="./assets/logo_footer.png" alt=""></a>
 
             <div class="informacoes">
 
