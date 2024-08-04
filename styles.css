@@ -1196,6 +1196,7 @@ textarea {
     gap: 50px;
     justify-content: right;
     width: 45%;
+    margin-top: 112px;
   }
 
   .footer > .listas > ul {
