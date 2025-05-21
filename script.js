@@ -75,7 +75,10 @@ async function enviarEmail() {
     "para": "contato@bindflow.com.br",
     "para": "filipe.natividade@bindflow.com.br",
     "assunto": "Contato pelo site Bindflow",
-    "corpo": name, email, telefone, message
+    "corpo": `Nome: ${name}\n` +
+      `Email: ${email}\n` +
+      `Telefone: ${telefone}\n` +
+      `Mensagem: ${message}`
   };
 
   try {
