@@ -72,13 +72,13 @@ async function enviarEmail() {
 
   const payload = {
     "de": "no-reply@bindflow.com.br",
-    "para": "contato@bindflow.com.br",
+    // "para": "contato@bindflow.com.br",
     "para": "filipe.natividade@bindflow.com.br",
     "assunto": "Contato pelo site Bindflow",
-    "corpo": `Nome: ${name}\n` +
-      `Email: ${email}\n` +
-      `Telefone: ${telefone}\n` +
-      `Mensagem: ${message}`
+    "corpo": `${name} \n\n` +
+      `${email} \n\n` +
+      `${phone} \n\n` +
+      `${message}`
   };
 
   try {
